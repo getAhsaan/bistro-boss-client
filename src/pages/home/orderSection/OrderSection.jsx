@@ -12,14 +12,12 @@ import slide2 from "../../../assets/home/slide2.jpg";
 import slide3 from "../../../assets/home/slide3.jpg";
 import slide4 from "../../../assets/home/slide4.jpg";
 import slide5 from "../../../assets/home/slide5.jpg";
+import SectionHeader from "../../../components/sectionHeader/SectionHeader";
 
 const OrderSection = () => {
   return (
     <div className=" mt-20">
-      <div className="text-center md:text-xl md:w-1/4 mx-auto">
-        <p className="text-[#D99904] py-2">---From 11:00am to 10:00pm---</p>
-        <h3 className="md:text-4xl text-3xl uppercase border-y-2 py-4">Order Online</h3>
-      </div>
+      <SectionHeader subHeading={"From 11:00am to 10:00pm"} heading={"ORDER ONLINE"}></SectionHeader>
       <div className="my-10 w-full mx-auto">
         <Swiper
           slidesPerView={4}
