@@ -51,7 +51,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="fixed top-0 z-20 bg-opacity-80 shadow-xl navbar bg-[#1E1E1E] mx-auto ">
+    <div className="sticky top-0 z-20 bg-opacity-80 shadow-xl navbar bg-[#1E1E1E] mx-auto ">
       <div className="navbar-start">
         <div className="dropdown">
           <label
