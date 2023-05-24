@@ -6,18 +6,30 @@ import Menu from "../menu/Menu";
 import CallSection from "../callSection/CallSection";
 import ChefSection from "../chefSection/ChefSection";
 import MenuTwo from "../menuTwo/MenuTwo";
+import Testimonial from "../testimonial/Testimonial";
 
 const Home = () => {
   return (
     <div>
       <div className="max-w-6xl mx-auto">
-      <OrderSection></OrderSection>
-      <BistroSection></BistroSection>
-      <Menu></Menu>
-      <CallSection></CallSection>
-      <ChefSection></ChefSection>
+        <OrderSection></OrderSection>
+      </div>
+      <div className="max-w-6xl mx-auto">
+        <BistroSection></BistroSection>
+      </div>
+      <div className="max-w-6xl mx-auto">
+        <Menu></Menu>
+      </div>
+      <div className="max-w-6xl mx-auto">
+        <CallSection></CallSection>
+      </div>
+      <div className="max-w-6xl mx-auto">
+        <ChefSection></ChefSection>
       </div>
       <MenuTwo></MenuTwo>
+      <div className="max-w-6xl mx-auto">
+        <Testimonial></Testimonial>
+      </div>
     </div>
   );
 };
