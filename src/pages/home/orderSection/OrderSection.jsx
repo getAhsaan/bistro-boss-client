@@ -15,65 +15,62 @@ import slide5 from "../../../assets/home/slide5.jpg";
 import SectionHeader from "../../../components/sectionHeader/SectionHeader";
 
 const OrderSection = () => {
+  const breakpoints = {
+    // When window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // When window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // When window width is >= 1024px
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  };
+
   return (
-    <div className=" md:mt-20">
-      <SectionHeader subHeading={"From 11:00am to 10:00pm"} heading={"ORDER ONLINE"}></SectionHeader>
+    <div className="md:mt-20">
+      <SectionHeader
+        subHeading={"From 11:00am to 10:00pm"}
+        heading={"ORDER ONLINE"}
+      ></SectionHeader>
       <div className="my-10 w-full mx-auto">
         <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
+          breakpoints={breakpoints}
+          pagination={{ clickable: true }}
           modules={[Pagination]}
         >
           <SwiperSlide>
-            <img
-              src={slide1}
-              alt="slide1"
-              className="w-full"
-            />
+            <img src={slide1} alt="slide1" className="w-full px-4 md:px-4 h-60 md:h-full" />
             <h3 className="text-white -mt-16 text-center md:text-3xl me-16  uppercase">
               Salads
             </h3>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src={slide2}
-              alt="slide2"
-              className="w-full"
-            />
+            <img src={slide2} alt="slide2" className="w-full px-4 md:px-4 h-60 md:h-full" />
             <h3 className="text-white -mt-16 text-center md:text-3xl me-16 uppercase">
               Pizzas
             </h3>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src={slide3}
-              alt="slide3"
-              className="w-full"
-            />
+            <img src={slide3} alt="slide3" className="w-full px-4 md:px-4 h-60 md:h-full" />
             <h3 className="text-white -mt-16 text-center md:text-3xl me-16 uppercase">
               Soups
             </h3>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src={slide4}
-              alt="slide4"
-              className="w-full"
-            />
+            <img src={slide4} alt="slide4" className="w-full px-4 md:px-4 h-60 md:h-full" />
             <h3 className="text-white -mt-16 text-center md:text-3xl me-16 uppercase">
               Desserts
             </h3>
           </SwiperSlide>
-
           <SwiperSlide className="mb-20">
-            <img
-              src={slide5}
-              alt="slide5"
-              className="w-full"
-            />
+            <img src={slide5} alt="slide5" className="w-full px-4 md:px-4 h-60 md:h-full" />
             <h3 className="text-white -mt-16 text-center md:text-3xl me-16 uppercase">
               Salads
             </h3>

@@ -6,12 +6,12 @@ import Banner from "../pages/home/banner/Banner";
 
 const MainLayout = () => {
   return (
-    <div className="max-w-[1440px] mx-auto">
+    <>
       <Navbar></Navbar>
       <Banner></Banner>
       <Outlet></Outlet>
       <Footer></Footer>
-    </div>
+    </>
   );
 };
 

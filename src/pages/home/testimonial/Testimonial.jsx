@@ -26,6 +26,7 @@ const Testimonial = () => {
       <Swiper
         navigation={true}
         modules={[Navigation]}
+       
       >
         <div>
           {reviews.map((review) => (
@@ -34,16 +35,16 @@ const Testimonial = () => {
               className="md:px-20 px-10 space-y-4 mt-10"
             >
               <Rating
-               style={{maxWidth: 250}}
+               
                 value={review.rating}
-                className="mx-auto"
+                className="mx-auto max-w-[150px] md:max-w-[250px]"
                 readOnly
               />
-              <FaQuoteLeft className="text-6xl w-full"></FaQuoteLeft>
+              <FaQuoteLeft className="md:text-6xl text-3xl w-full"></FaQuoteLeft>
               <p className="md:text-center text-justify">
                 {review.details}
               </p>
-              <h3 className="text-3xl text-[#CD9003] text-center uppercase">
+              <h3 className="md:text-3xl text-xl text-[#CD9003] text-center uppercase">
                 {review.name}
               </h3>
             </SwiperSlide>

@@ -18,7 +18,7 @@ const MenuTwo = () => {
             alt=""
           />
         </div>
-        <div>
+        <div className="mt-4 md:mt-0">
           <h3 className="md:text-2xl text-xl">March 20, 2023 </h3>
           <h3 className="md:text-2xl text-xl uppercase"> WHERE CAN I GET SOME?</h3>
           <p className="md:text-xl text-sm my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate facere, deserunt dolores maiores quod nobis quas quasi. Eaque repellat recusandae ad laudantium tempore consequatur consequuntur omnis ullam maxime tenetur.</p>
