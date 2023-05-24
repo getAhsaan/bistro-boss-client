@@ -16,7 +16,7 @@ import SectionHeader from "../../../components/sectionHeader/SectionHeader";
 
 const OrderSection = () => {
   return (
-    <div className=" mt-20">
+    <div className=" md:mt-20">
       <SectionHeader subHeading={"From 11:00am to 10:00pm"} heading={"ORDER ONLINE"}></SectionHeader>
       <div className="my-10 w-full mx-auto">
         <Swiper

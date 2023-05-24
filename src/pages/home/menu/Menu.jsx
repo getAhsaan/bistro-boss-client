@@ -18,13 +18,13 @@ const Menu = () => {
   };
 
   return (
-    <div className="my-20">
+    <div className="md:my-20 my-8">
       <SectionHeader
         subHeading={"Check it out"}
         heading={"FROM OUR MENU"}
       />
 
-      <div className="md:grid grid-cols-2 gap-8 md:mt-12 md:mb-6 p-4 md:p-0">
+      <div className="md:grid grid-cols-2 gap-8 md:mt-12 md:mb-6 p-4">
         {menu.slice(0, visibleItemsCount).map((singleMenu) => (
           <MenuItem
             key={singleMenu._id}
