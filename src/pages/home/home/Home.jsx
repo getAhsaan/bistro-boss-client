@@ -7,23 +7,20 @@ import CallSection from "../callSection/CallSection";
 import ChefSection from "../chefSection/ChefSection";
 import MenuTwo from "../menuTwo/MenuTwo";
 import Testimonial from "../testimonial/Testimonial";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Bistro Boss | Home</title>
+      </Helmet>
+      <Banner></Banner>
       <div className="max-w-6xl mx-auto">
         <OrderSection></OrderSection>
-      </div>
-      <div className="max-w-6xl mx-auto">
         <BistroSection></BistroSection>
-      </div>
-      <div className="max-w-6xl mx-auto">
         <Menu></Menu>
-      </div>
-      <div className="max-w-6xl mx-auto">
         <CallSection></CallSection>
-      </div>
-      <div className="max-w-6xl mx-auto">
         <ChefSection></ChefSection>
       </div>
       <MenuTwo></MenuTwo>

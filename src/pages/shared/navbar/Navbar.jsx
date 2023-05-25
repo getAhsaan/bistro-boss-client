@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import bistroLogo from "../../../assets/bistro-logo.png";
 import cart from "../../../assets/icon/cart.png";
 import profile from "../../../assets/others/profile.png";
@@ -8,12 +8,20 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <nav
+        <NavLink
           to={"/"}
           className="text-white"
         >
           Home
-        </nav>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/our-menu"}
+          className="text-white"
+        >
+          Our Menu
+        </NavLink>
       </li>
       <li>
         <nav
@@ -31,14 +39,7 @@ const Navbar = () => {
           DashBoard
         </nav>
       </li>
-      <li>
-        <nav
-          to={"/our-menu"}
-          className="text-white"
-        >
-          Our Menu
-        </nav>
-      </li>
+
       <li>
         <nav
           to={"/our-shop"}
@@ -51,7 +52,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="md:px-20 fixed top-0 z-20 bg-opacity-80 shadow-xl navbar bg-[#1E1E1E] mx-auto ">
+    <div className="md:px-20 fixed top-0 z-20 bg-opacity-80 shadow-xl navbar backdrop-blur-md bg-[#1E1E1E]/50 mx-auto ">
       <div className="navbar-start">
         <div className="dropdown">
           <label
@@ -80,9 +81,7 @@ const Navbar = () => {
             {navItems}
           </ul>
         </div>
-        <Link
-          to={"/"}
-        >
+        <Link to={"/"}>
           <img
             src={bistroLogo}
             alt=""
@@ -91,34 +90,33 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden md:flex uppercase text-xl">
         <ul className="menu menu-horizontal px-1">{navItems}</ul>
-       
       </div>
       <div className="-mt-7 navbar-end">
-      <li className="md:w-[60px] md:h-[40px] w-[36px] h-[24px] -mt-7">
-        <nav>
-          <img
-            src={cart}
-            alt="cart"
-          />
-        </nav>
-      </li>
-      <li className=" mx-2 ">
-        <nav
-          to={"/sign-in"}
-          className="text-white text-sm md:text-xl md:uppercase"
-        >
-          Sign Out
-        </nav>
-      </li>
-      <li className=" mx-2">
-        <nav>
-          <img
-            src={profile}
-            alt="profile"
-            className=" md:w-[40px] md:h-[40px] w-[24px] h-[24px] rounded-full"
-          />
-        </nav>
-      </li>
+        <li className="md:w-[60px] md:h-[40px] w-[36px] h-[24px] -mt-7">
+          <nav>
+            <img
+              src={cart}
+              alt="cart"
+            />
+          </nav>
+        </li>
+        <li className=" mx-2 ">
+          <nav
+            to={"/sign-in"}
+            className="text-white text-sm md:text-xl md:uppercase"
+          >
+            Sign Out
+          </nav>
+        </li>
+        <li className=" mx-2">
+          <nav>
+            <img
+              src={profile}
+              alt="profile"
+              className=" md:w-[40px] md:h-[40px] w-[24px] h-[24px] rounded-full"
+            />
+          </nav>
+        </li>
       </div>
     </div>
   );
